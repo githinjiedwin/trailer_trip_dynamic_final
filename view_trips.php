@@ -32,65 +32,87 @@ $conn->close();
   <meta charset="UTF-8">
   <title>View Trips - Maguna Andu</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f7faff;
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7faff;
+    margin: 0;
+    padding: 0;
+  }
 
-    h1 {
-      background: #003f5c;
-      color: white;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
-    }
+  h1 {
+    background: #003f5c;
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
 
-    h2 {
-      color: #003f5c;
-      margin: 30px 0 10px 20px;
-    }
+  .print-btn {
+    background: #003f5c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px auto;
+    display: block;
+  }
 
-    table {
-      width: 95%;
-      margin: 10px auto 40px auto;
-      border-collapse: collapse;
-      background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+  .print-btn:hover {
+    background: #005a87;
+  }
 
-    th, td {
-      padding: 12px;
-      border: 1px solid #ccc;
-      text-align: left;
-      font-size: 14px;
-    }
+  h2 {
+    color: #003f5c;
+    margin: 30px 0 10px 20px;
+  }
 
-    th {
-      background-color: #e3f2fd;
-    }
+  table {
+    width: 95%;
+    margin: 10px auto 40px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
 
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
+  th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+  }
 
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      padding: 20px;
-      background: #f1f1f1;
-      color: #777;
-    }
-  </style>
+  th {
+    background-color: #e3f2fd;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 20px;
+    background: #f1f1f1;
+    color: #777;
+  }
+</style>
 </head>
 <body>
 
 <h1>View Trips - Maguna Andu Trailer Tracker</h1>
+<div style="text-align: center;">
+  <button class="print-btn" onclick="window.print()">🖨️ Print Report</button>
+</div>
 
 <?php if (!empty($data)): ?>
   <?php foreach ($data as $godown => $rows): ?>
     <h2><?= htmlspecialchars($godown) ?></h2>
+    <p style="margin-left: 20px; color: #555;">
+  Total Trips: <?= array_sum(array_column($rows, 'trips')) ?>
+</p>
     <table>
       <thead>
         <tr>
