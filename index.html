@@ -4,13 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trailer Trip Tracker - Maguna Andu</title>
-  <link rel="stylesheet" href="style1.css" />
+  <link rel="stylesheet" href="style1.css">
 </head>
 <body>
   <header>
     <h1><strong>Maguna Andu Trailer Trip Tracker</strong></h1>
     <p>Monthly Summary & Performance Report</p>
   </header>
+  <div style="text-align: center; margin-bottom: 30px;">
+  <a href="view_trips.php" style="color: #003f5c; font-weight: bold;">📄 View Saved Trips</a>
+</div>
 
   <main>
     <button class="print-btn" onclick="window.print()">🖨️ Print Report</button>
@@ -32,90 +35,74 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KAW 961V</td>
-          <td>JOSEPH CHEGE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate"value="KBW 803A"></td>
+          <td><input class="driver-name" value="MURIUKI GITERU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KBW 803A</td>
-          <td>JOHN MURIUKI GITERU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KBW 660X"></td>
+          <td><input class="driver-name"value="FESTUS MAINA NJOGU" ></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KBW 660X</td>
-          <td>FESTUS MAINA NJOGU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KCC 278G"></td>
+          <td><input class="driver-name" value=" PETER NJOROGE WAWERU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCC 278G</td>
-          <td>PETER NJOROGE WAWERU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KCG 867R"></td>
+          <td><input class="driver-name" value= "JOHN MAINA MWANGI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCG 867R</td>
-          <td>JOHN MAINA MWANGI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KCG 869R"></td>
+          <td><input class="driver-name" value="MOSES RURENGO IRUNGU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCG 869R</td>
-          <td>MOSES RURENGO IRUNGU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KCX 247D"></td>
+          <td><input class="driver-name" value="JAMES THUKU GATHUTHI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCZ 127L</td>
-          <td>JOHN MWANGI WAWERU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KDA 025L"></td>
+          <td><input class="driver-name" value="EARNESTKARANJA NJOROGE"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCX 247D</td>
-          <td>JAMES THUKU GATHUTHI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KDA 098N"></td>
+          <td><input class="driver-name" value="STEPHEN KINYEKI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDA 025L</td>
-          <td>ERNEST KARANJA NJOROGE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KDL 332J"></td>
+          <td><input class="driver-name" value="MARTIN MWATHA WAITHERA"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDA 098N</td>
-          <td>STEPHEN KINYEKI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr  class="trip-row" data-godown="MURANGA GODOWN">
+          <td><input class="number-plate" value="KDL 335J"></td>
+          <td><input class="driver-name" value="GEOFFREY MURITU MAINA"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDL 332J</td>
-          <td>MARTIN MWATHA WAITHERA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MURANGA GODOWN" >
+          <td><input class="number-plate" value="KDL 336J"></td>
+          <td><input class="driver-name" value=" FRANCIS MACHARIA"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDL 335J</td>
-          <td>GEOFFREY MURITU MAINA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
-        </tr>
-<tr>
-          <td>KDL 336J</td>
-          <td>FRANCIS MACHARIA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
-        </tr>
-<tr>
-          <td>KBK 596S</td>
-          <td>BENSON NJOROGE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
-        </tr>
+
 </tbody></table></div>
     <div class="godown">
       <h2><strong>MAKUTANO GODOWN</strong></h2>
@@ -134,41 +121,41 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KCY 008C</td>
-          <td>FRANCIS CHEGE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+    <tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value="KCY 008C"></td>
+          <td><input class="driver-name" value="FRANCIS CHEGE"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDA 036L</td>
-          <td>ALEX NJUGUNA KINYANJUI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value="KDA 036L"></td>
+          <td><input class="driver-name" value="ALEX NJUGUNA KINYANJUI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCC 282G</td>
-          <td>STEPHEN NJOGU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value="KCC 282G"></td>
+          <td><input class="driver-name" value="STEPHEN NJOGU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KBN 581V</td>
-          <td>JOHN MACHARIA NJOROGE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value="KBN 581V" ></td>
+          <td><input class="driver-name" value="JOHN MACHARIA NJOROGE"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KBY 490A</td>
-          <td>SAMSON NJOROGE WANJIRU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value=" KBY 490A"></td>
+          <td><input class="driver-name" value="SAMSON NJOROGE WANJIRU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KBY 480A</td>
-          <td>BEN MWANGI MBOGO </td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MAKUTANO GODOWN">
+          <td><input class="number-plate" value="KBY 480A"></td>
+          <td><input class="driver-name" value=" BEN MWANGI MBOGO"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
 </tbody></table></div>
     <div class="godown">
@@ -188,41 +175,41 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KDL 151J</td>
-          <td>EDWARD MUGUONGO KUNGU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+    <tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value="KDL 151J"></td>
+          <td><input class="driver-name" value="EDWARD MUGUONGO KUNGU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDL 152J</td>
-          <td>ERICKSON KABIRI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value="KDL 152J"> </td>
+          <td><input class="driver-name" value="ERICKSON KABIRI" ></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDL 321J</td>
-          <td>JAMES MWANGI KAMAU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value=" KDL 321J"></td>
+          <td><input class="driver-name" value="JAMES MWANGI KAMAU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDA 105N</td>
-          <td>KAMAU MAINA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value="KDA 105N"></td>
+          <td><input class="driver-name" value=" KAMAU MAINA"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDL 329J</td>
-          <td>JAMES MBURU NJERI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value=" KDL 329J"></td>
+          <td><input class="driver-name" value="JAMES MBURU NJERI" ></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KCX 243D</td>
-          <td>LUKA JOHN SANGAWA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="MERU GODOWN">
+          <td><input class="number-plate" value=" KCX 243D"></td>
+          <td><input class="driver-name" value="LUKA JOHN SANGAWA"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
 </tbody></table></div>
     <div class="godown">
@@ -242,11 +229,11 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KDM 316H</td>
-          <td>LEWIS MWITI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+    <tr class="trip-row" data-godown="BABADOGO GODOWN">
+          <td><input class="number-plate" value="KDM 316H"></td>
+          <td><input class="driver-name" value="LEWIS MWITI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
 </tbody></table></div>
     <div class="godown">
@@ -266,11 +253,11 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KCC 280G</td>
-          <td>JOSEPH MACHARIA MUGWE</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+    <tr class="trip-row" data-godown="KITUI GODOWN">
+          <td><input class="number-plate" value=" KCC 280G"></td>
+          <td><input class="driver-name" value="JOSEPH MACHARIA MUGWE"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
 </tbody></table></div>
     <div class="godown">
@@ -290,35 +277,36 @@
           <tr><th>Number Plate</th><th>Driver</th><th>Trips</th><th>Comment</th></tr>
         </thead>
         <tbody>
-    <tr>
-          <td>KDM 318H</td>
-          <td>AMOS MUIRURI</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+    <tr class="trip-row" data-godown="NAKURU GODOWN">
+          <td><input class="number-plate" value="KDM 318H"></td>
+          <td><input class="driver-name" value=" AMOS MUIRURI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDM 317H</td>
-          <td>JOHN MURITHII KURIA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="NAKURU GODOWN">
+          <td><input class="number-plate" value="KDM 317H"></td>
+          <td><input class="number-plate" value="JOHN MURITHII KURIA" ></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDM 319H</td>
-          <td>SAMUEL MWANGI NGUMO</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="NAKURU GODOWN">
+          <td><input class="number-plate" value="KDM 319H"></td>
+          <td><input class="driver-name" value="SAMUEL MWANGI NGUMO"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDM 315H</td>
-          <td>PAUL NDERITU</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="NAKURU GODOWN">
+          <td><input class="number-plate" value=" KDM 315H"></td>
+          <td><input class="driver-name" value="PAUL NDERITU"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment" type="text" style="width: 100%;" /></td>
         </tr>
-<tr>
-          <td>KDM 314H</td>
-          <td>GERALD MUHINDI GAKUNGA</td>
-          <td><input class="trips-input" type="number" min="0" value="0" style="width:60px;" /></td>
-          <td><input type="text" style="width: 100%;" /></td>
+<tr class="trip-row" data-godown="NAKURU GODOWN">
+
+          <td><input class="number-plate" value="KDM 314H"></td>
+          <td><input class="driver-name" value="PATRICK KARIUKI"></td>
+          <td><input class="trips" type="number" min="0" value="0" style="width:60px;" /></td>
+          <td><input class="comment"  type="text" style="width: 100%;" /></td>
         </tr>
 </tbody></table></div>
   </main>
@@ -334,7 +322,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const allRows = [...over10.querySelectorAll("tr"), ...under10.querySelectorAll("tr")];
 
       allRows.forEach(row => {
-        const tripsInput = row.querySelector(".trips-input");
+        const tripsInput = row.querySelector(".trips");
         const trips = parseInt(tripsInput?.value || "0");
         const currentTable = row.closest("table");
         const shouldBeOver10 = trips >= 10;
@@ -351,14 +339,36 @@ document.addEventListener("DOMContentLoaded", function () {
   setInterval(updateTables, 1500);
 });
 </script>
+
+<!--Month Input-->
+<div style="text-align: center; margin: 20px 0;">
+  <label for="monthYear">Month:</label>
+  <input type="text" id="monthYear" placeholder="e.g. July 2025" />
+</div>
+
 <!-- Save Button -->
 <div style="text-align: center; margin: 40px 0;">
   <button class="save-btn" onclick="saveTrips()">💾 Save to Server</button>
 </div>
+<p id="save-status" style="text-align: center; color: green; font-weight: bold;"></p>
+<!-- View Trips Button -->
+<div style="text-align: center; margin-bottom: 30px;">
+  <a href="view_trips.php" style="
+    display: inline-block;
+    background-color: #003f5c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;">
+    📄 View Saved Trips
+  </a>
+</div>
+
 <script>
 function saveTrips() {
-  // Collect your trip data here – this depends on how your table inputs are set up
-  // Here's a basic example assuming you’ve already collected the data:
   const tripData = [];
 
   document.querySelectorAll('.trip-row').forEach(row => {
@@ -368,26 +378,47 @@ function saveTrips() {
       driver_name: row.querySelector('.driver-name').value,
       trips: row.querySelector('.trips').value,
       comment: row.querySelector('.comment').value,
-      month_year: document.getElementById('monthYear').value || 'July 2025'
+      month_year: document.getElementById('monthYear')?.value || 'July 2025'
     });
   });
 
-  // Send to PHP via fetch
   fetch('save_trips.php', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json'
+    },
     body: JSON.stringify(tripData)
   })
-  .then(response => response.text())
-  .then(data => {
-    alert(data); // Should say "Data saved successfully."
-  })
-  .catch(error => {
-    console.error('Error:', error);
-    alert("Something went wrong while saving.");
-  });
+  .then(response => response.json())
+.then(data => {
+  const status = document.getElementById('save-status');
+  if (data.success > 0) {
+    status.style.color = 'green';
+    status.textContent = `${data.success} trip(s) saved successfully.`;
+  } else {
+    status.style.color = 'orange';
+    status.textContent = 'No data was saved.';
+    status.textContent = 'Please enter the month before saving.';
+  }
+  // Auto-clear after 5 seconds
+  setTimeout(() => {
+    status.textContent = '';
+  }, 5000);
+})
+.catch(error => {
+  console.error('Error saving data:', error);
+  const status = document.getElementById('save-status');
+  status.style.color = 'red';
+  status.textContent = 'Something went wrong.';
+  // Auto-clear after 5 seconds
+  setTimeout(() => {
+    status.textContent = '';
+  }, 5000);
+});
+
 }
 </script>
+
 
 </body>
 </html>
