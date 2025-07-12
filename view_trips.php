@@ -11,8 +11,16 @@ if ($conn->connect_error) {
 }
 
 // Fetch all trip logs
-$sql = "SELECT * FROM trip_logs ORDER BY month_year DESC, godown, trips DESC";
-$result = $conn->query($sql);
+$monthFilter = isset($_GET['month']) ? $_GET['month'] : '';
+if ($monthFilter) {
+  $stmt = $conn->prepare("SELECT * FROM trip_logs WHERE month_year = ? ORDER BY godown, trips DESC");
+  $stmt->bind_param("s", $monthFilter);
+  $stmt->execute();
+  $result = $stmt->get_result();
+} else {
+  $sql = "SELECT * FROM trip_logs ORDER BY month_year DESC, godown, trips DESC";
+  $result = $conn->query($sql);
+}
 
 $data = [];
 
@@ -103,6 +111,15 @@ $conn->close();
 <body>
 
 <h1>View Trips - Maguna Andu Trailer Tracker</h1>
+<form method="get" style="text-align: center; margin-top: 20px;">
+  <label for="month">Filter by Month:</label>
+  <input type="text" name="month" id="month" placeholder="e.g. July 2025" value="<?= isset($_GET['month']) ? htmlspecialchars($_GET['month']) : '' ?>">
+  <button type="submit">🔍 Filter</button>
+</form>
+<div style="text-align: center; margin-bottom: 30px;">
+  <a href="index.html" style="color: #003f5c; font-weight: bold;">← Back to Trip Entry</a>
+</div>
+
 <div style="text-align: center;">
   <button class="print-btn" onclick="window.print()">🖨️ Print Report</button>
 </div>
